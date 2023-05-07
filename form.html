@@ -5,15 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form-Test</title>
+<Style>
+*{
 
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(14, 184, 184);
+    font-size: 25px;
+}
+legend{
+text-align: center;
+font-size: 15px;
+
+}
+
+
+ #e {
+
+    color: white;
+}
+</Style>
 
 </head>
 
 <body>
 
-   <pre> <form action="">
+   <form action="#" id="e">
+    <pre >
+        <fieldset>
 
+<legend>Student Reg form</legend>
+
+        
         <label> Name </label>
         <input type="text">
         
@@ -32,8 +56,41 @@
         <input type="radio" name="Marital Status"> <label> YES </label>
         <input type="radio" name="Marital Status"> <label> NO </label>
 
+          <label>Hobby</label>
+          <input type="Checkbox" value="Gardening"> <label >Gardening</label>
+          <input type="Checkbox" value="Gardening"> <label >Traveling</label>
+          <input type="Checkbox" value="Gardening"> <label >Reading</label>
 
-    </form></pre>
+          <label> Subject </label>
+          <select>
+<option> --Select One -- </option>
+<option> JEE </option>
+<option> DDD </option>
+<option> C# </option>
+<option> PHP </option>
+<option> Networking </option>
+
+          </select>
+
+
+<label>About </label>
+          <textarea cols="30" rows="10">
+</textarea>
+
+
+<button type="submit" value="Submit">
+    Submit
+</button>
+
+
+
+
+
+</fieldset></pre>  </form>
+
+
+
+
 
 
 </body>
