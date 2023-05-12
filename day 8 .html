@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>Facebook - Log In or Sign Up</title>
+<style>
+/* Use a simple and clean font */
+* {
+font-family: Arial, sans-serif;
+}
+
+/* Center the container div and give it some padding */
+#container {
+width: 800px;
+margin: 0 auto;
+padding: 20px;
+}
+
+/* Align the header elements horizontally and add some spacing */
+#header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+/* Resize the logo image and add some margin */
+#header img {
+width: 150px;
+height: 50px;
+margin-right: 20px;
+}
+
+/* Style the login form inputs and button */
+#login-form input {
+width: 150px;
+height: 25px;
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 5px;
+margin: 5px;
+}
+
+#login-form input[type="submit"] {
+background-color: #1877f2;
+color: white;
+font-weight: bold;
+}
+
+/* Style the content elements and add some spacing */
+#content {
+margin-top: 50px;
+}
+
+#content h1 {
+color: #1877f2;
+font-size: 36px;
+}
+
+#content p {
+color: #606770;
+font-size: 14px;
+}
+
+/* Style the signup form inputs and button */
+#signup-form input {
+width: 300px;
+height: 40px;
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 10px;
+margin: 10px;
+}
+
+/* Make the name fields smaller and align them horizontally */
+#name-fields {
+display: flex;
+}
+
+#name-fields input {
+width: 140px;
+margin-right: 20px;
+}
+
+/* Style the select elements and add some margin */
+#signup-form select {
+width: 300px;
+height: 40px;
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 10px;
+margin: 10px;
+}
+
+/* Style the signup button */
+#signup-form input[type="submit"] {
+background-color: #42b72a;
+color: white;
+font-weight: bold;
+}
+</style>
+</head>
+<body>
+<div id="container">
+<div id="header">
+<img src="facebook-logo.png" alt="Facebook logo" />
+<form id="login-form" action="login.php" method="post">
+<!-- Use email type for email input for better validation -->
+<input type="email" name="email" placeholder="Email or Phone Number" required />
+<input type="password" name="password" placeholder="Password" required />
+<input type="submit" value="Log In" />
+<a href="#">Forgot Password?</a>
+</form>
+</div>
+<div id="content">
+<h1>Create a New Account</h1>
+<p>It's quick and easy.</p>
+<form id="signup-form" action="signup.php" method="post">
+<div id="name-fields">
+<!-- Use pattern attribute to validate name inputs -->
+<input type="text" name="first_name" placeholder="First name" pattern="[A-Za-z]+" required />
+<input type="text" name="last_name" placeholder="Last name" pattern="[A-Za-z]+" required />
+</div>
+<!-- Use email type for email input for better validation -->
+<input type="email" name="email" placeholder="Email or Phone Number" required />
+<!-- Use minlength attribute to enforce password length -->
+<input type="password" name="password" placeholder="New Password" minlength="8" required />
+<!-- Use date type for birthday input for better user experience -->
+<label for="birthday">Birthday</label>
+<input id="birthday" type="date" name="birthday" required />
+<!-- Use radio buttons for gender input for better user experience -->
+<label for="gender">Gender</label>
+<
