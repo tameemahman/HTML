@@ -1,0 +1,25 @@
+*{
+
+    margin: 40px;
+    padding: 5px;
+    background-color: rgb(42, 78, 78);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+legend{
+    text-align: center;
+}
+
+
+#egor{
+    color: rgb(174, 174, 184);
+}
+
+#gr{
+    background-color: rgb(80, 143, 18);
+}
+
+#rst{
+    background-color: rgb(133, 54, 54);
+}
