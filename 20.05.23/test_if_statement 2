@@ -1,0 +1,20 @@
+// 0-18 cool, 19-27 normal . 28 to unlimited abnormal
+
+
+let weather=40;
+
+if(weather>28){
+    console.log("Abnormal Weather");
+}
+
+else if(weather>19){
+    console.log("Normal Weather");
+}
+
+else if (weather>0){
+    console.log("Cool Weather");
+}
+
+else {
+    console.log("Invalid Weather");
+}
